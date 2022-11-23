@@ -11,6 +11,7 @@ package day04.method;
  *  오버로딩
  *  	메소드 명이 같아도 매개변수 갯수 또는 타입이 다르면 사용 가능
  */
+
 public class MainClass01 {
 	public static String name; // 전역변수 name 선언
 	
@@ -22,7 +23,6 @@ public class MainClass01 {
 		
 		// printName 메소드 호출하기
 		printName("이상준");
-		
 		setName("피카츄");
 	
 		String strName = getName();
