@@ -57,5 +57,4 @@ public class MainClass01 {
 			System.out.println("일반소총입니다.");
 		}
 	}
-	
 }
