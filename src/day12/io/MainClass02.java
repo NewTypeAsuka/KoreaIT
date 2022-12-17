@@ -28,11 +28,15 @@ public class MainClass02 {
 			int readByteCnt = 0;
 			byte[] b = new byte[3];
 			
+			int i = 1;
+			
 			// fis.read(b) - b 길이만큼 읽어서 b에 저장
 			// 읽은 길이값 readByteCnt에 저장
 			while((readByteCnt = fis.read(b)) != -1) {
 				// fos.write() - b 데이터 readByteCnt 길이만큼 쓰기
 				fos.write(b, 0, readByteCnt);
+				System.out.println(i + ": " + new String(b, 0, readByteCnt));
+				i++;
 			}
 			
 			System.out.println("실행 완료!");
